@@ -1,0 +1,6 @@
+{
+  "name": "YC's Powerhouse Gym Moshi",
+  "description": "Premium, high-energy fitness facility in Moshi, Pimpri-Chinchwad featuring top-tier equipment, expert training by Ayush Bari Sir, and private yoga sessions.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YC’s Powerhouse Gym Moshi | Premium Gym & Private Yoga in Moshi</title>
+  
+  <!-- Google Fonts: Outfit & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration for custom fonts & themes -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            zinc: {
+              950: '#09090b',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #09090b;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272a;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3f3f46;
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans selection:bg-lime-500 selection:text-black antialiased relative overflow-x-hidden">
+
+  <!-- Dynamic Background Glowing Accents -->
+  <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-lime-500/5 rounded-full blur-[150px] -z-10"></div>
+  <div class="absolute bottom-1/3 right-1/4 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-[180px] -z-10"></div>
+
+  <!-- Top Announcement Bar / Active Status Indicator -->
+  <div class="bg-lime-400 text-black py-2 px-4 text-xs md:text-sm font-semibold tracking-wide relative z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center px-4 gap-2 text-center sm:text-left">
+      <div class="flex items-center justify-center gap-2">
+        <i data-lucide="star" class="w-4 h-4 fill-black"></i>
+        <span><strong class="font-bold">4.9 Stars Rating</strong> based on 1,090+ Google Reviews (Verified Social Proof)</span>
+      </div>
+      <div class="flex items-center justify-center gap-4">
+        <span class="flex items-center gap-1.5 font-mono text-xs">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+          <span id="open-status-text" class="font-bold text-emerald-800">Checking Open Hours...</span>
+        </span>
+        <span class="hidden md:inline-block bg-black/15 text-[10px] px-2.5 py-0.5 rounded font-bold uppercase tracking-wider">🏳️‍🌈 LGBTQ+ Safe Space</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="sticky top-0 bg-zinc-950/90 backdrop-blur-md border-b border-zinc-900 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="bg-zinc-950 w-12 h-12 flex items-center justify-center rounded-full border border-zinc-800 overflow-hidden transition-transform group-hover:scale-105 shadow-lg shadow-lime-500/10">
+          <img 
+            src="/src/assets/images/yc_gym_logo_1782287514370.jpg" 
+            alt="YC's Powerhouse Gym Logo" 
+            class="w-full h-full object-cover"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div>
+          <span class="text-xl md:text-2xl font-black tracking-tight font-display text-white">
+            YC’S <span class="text-lime-400">POWERHOUSE</span>
+          </span>
+          <div class="text-[10px] md:text-xs text-zinc-400 tracking-widest uppercase font-mono flex items-center gap-1">
+            <span>GYM MOSHI</span>
+            <span class="text-lime-400">●</span>
+            <span class="text-[9px]">वाईसी'स पावरहाउस</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+        <a href="#" class="text-lime-400 hover:text-lime-300 transition-colors">Home</a>
+        <a href="#about" class="text-zinc-300 hover:text-lime-400 transition-colors">About Us</a>
+        <a href="#amenities" class="text-zinc-300 hover:text-lime-400 transition-colors">Facilities</a>
+        <a href="#services" class="text-zinc-300 hover:text-lime-400 transition-colors">Specialties</a>
+        <a href="#testimonials" class="text-zinc-300 hover:text-lime-400 transition-colors">Success Stories</a>
+        <a href="#calculator" class="text-zinc-300 hover:text-lime-400 transition-colors">Rates Estimator</a>
+        <a href="#contact" class="text-zinc-300 hover:text-lime-400 transition-colors">Locate Us</a>
+      </nav>
+
+      <!-- Desktop Action CTAs -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="tel:09922969807" class="flex items-center gap-2 border border-zinc-850 hover:border-lime-500/50 px-4 py-2 rounded-xl text-sm font-semibold transition-colors text-zinc-300">
+          <i data-lucide="phone" class="w-4 h-4 text-lime-400 animate-bounce"></i>
+          <span>099229 69807</span>
+        </a>
+        <a href="#book-trial" class="bg-lime-500 hover:bg-lime-400 text-black font-semibold px-5 py-2.5 rounded-xl text-sm transition-all shadow-md active:scale-95">
+          Claim Free Trial
+        </a>
+      </div>
+
+      <!-- Mobile Nav Icon -->
+      <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-white hover:border-lime-500/50">
+        <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Panel -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-zinc-950 border-b border-zinc-900 px-6 py-6 space-y-4 absolute top-20 left-0 w-full shadow-2xl transition-all duration-300">
+      <div class="grid grid-cols-2 gap-3 text-sm font-medium">
+        <a href="#" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors">Home</a>
+        <a href="#about" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors">About Us</a>
+        <a href="#amenities" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors">Facilities</a>
+        <a href="#services" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors">Specialties</a>
+        <a href="#testimonials" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors">Reviews</a>
+        <a href="#calculator" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors">Rates</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="p-3 bg-zinc-900/60 rounded-xl hover:text-lime-400 transition-colors col-span-2 text-center">Locate Us & Contact</a>
+      </div>
+
+      <div class="bg-zinc-900 p-4 rounded-xl flex justify-between items-center text-xs">
+        <span class="flex items-center gap-1.5 font-mono text-zinc-400">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-lime-400"></i>
+          <span>Open daily: 6:00 AM - 10:00 PM</span>
+        </span>
+        <span class="text-lime-400 font-bold uppercase tracking-wider text-[10px]">🏳️‍🌈 LGBTQ+ Friendly</span>
+      </div>
+
+      <div class="flex flex-col gap-3 pt-2">
+        <a href="tel:09922969807" class="flex items-center justify-center gap-2 border border-zinc-800 bg-zinc-900 py-3 rounded-xl text-sm font-semibold text-zinc-200">
+          <i data-lucide="phone" class="w-4 h-4 text-lime-400"></i>
+          <span>Call: 099229 69807</span>
+        </a>
+        <a href="#book-trial" onclick="toggleMobileMenu()" class="bg-lime-500 hover:bg-lime-400 text-black py-3 rounded-xl text-sm font-bold text-center">
+          Claim Free Trial Pass
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-10 pb-20 md:py-32 flex flex-col justify-center overflow-hidden">
+    
+    <!-- Grid Overlay -->
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#27272a_1px,transparent_1px),linear-gradient(to_bottom,#27272a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30 -z-20"></div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Headline Block -->
+      <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+        <div class="inline-flex items-center gap-2 bg-lime-500/10 border border-lime-500/30 px-4 py-2 rounded-full text-lime-400 text-xs md:text-sm font-semibold tracking-wide uppercase shadow-sm">
+          <i data-lucide="zap" class="w-4 h-4 text-lime-400 fill-lime-400 animate-pulse"></i>
+          <span>UNLEASH YOUR POWER AT THE POWERHOUSE MOSHI</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight font-display leading-none text-white">
+          BUILD YOUR BODY.<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-lime-400 via-emerald-400 to-lime-300">
+            ACHIEVE UNBEATABLE
+          </span><br>
+          RESULTS.
+        </h1>
+
+        <p class="text-zinc-300 text-base md:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+          Join <strong class="text-white font-semibold">YC’s Powerhouse Gym Moshi</strong> — a friendly, highly motivating, community-first fitness platform. Experience certified trainer programs, high-class equipment, spotless sanitized areas, and customized private yoga classes for strength and wellness.
+        </p>
+
+        <!-- Rating Box -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 text-left pt-2">
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3.5 rounded-xl flex items-center gap-2.5">
+            <div class="bg-lime-500/10 p-1.5 rounded-lg text-lime-400">
+              <i data-lucide="star" class="w-4 h-4 fill-lime-400"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">4.9 Stars</div>
+              <div class="text-[10px] text-zinc-400">1,090 Google Reviews</div>
+            </div>
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3.5 rounded-xl flex items-center gap-2.5">
+            <div class="bg-lime-500/10 p-1.5 rounded-lg text-lime-400">
+              <i data-lucide="award" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Top Certified</div>
+              <div class="text-[10px] text-zinc-400">Coaches & PT</div>
+            </div>
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 p-3.5 rounded-xl flex items-center gap-2.5 col-span-2 sm:col-span-1">
+            <div class="bg-lime-500/10 p-1.5 rounded-lg text-lime-400">
+              <i data-lucide="users" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">All Welcome</div>
+              <div class="text-[10px] text-zinc-400">LGBTQ+ Safe Space</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button Actions -->
+        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+          <a href="#book-trial" class="w-full sm:w-auto bg-lime-500 hover:bg-lime-400 text-black font-extrabold text-base px-8 py-4 rounded-2xl transition-all shadow-xl shadow-lime-500/20 text-center flex items-center justify-center gap-2">
+            <span>CLAIM 1-DAY FREE TRIAL</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </a>
+          <a href="tel:09922969807" class="w-full sm:w-auto border border-zinc-800 hover:border-lime-500 bg-zinc-900/80 hover:bg-zinc-900 text-white font-semibold text-base px-8 py-4 rounded-2xl transition-all text-center flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="w-5 h-5 text-lime-400 animate-bounce"></i>
+            <span>Call: 099229 69807</span>
+          </a>
+        </div>
+
+        <div class="flex items-center justify-center lg:justify-start gap-1.5 text-xs text-zinc-400 pt-2">
+          <span class="text-yellow-500">★★★★★</span>
+          <span>• Verified Local Favorite in Moshi, Pimpri-Chinchwad</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="lg:col-span-5 relative">
+        <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent z-10"></div>
+        <div class="absolute -top-4 -left-4 w-16 h-16 border-t-2 border-l-2 border-lime-400 rounded-tl-2xl opacity-60"></div>
+        <div class="absolute -bottom-4 -right-4 w-16 h-16 border-b-2 border-r-2 border-lime-400 rounded-br-2xl opacity-60"></div>
+
+        <div class="relative rounded-3xl overflow-hidden border border-zinc-800 bg-zinc-900 shadow-2xl group">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="Gym training area" class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black via-black/80 to-transparent z-20">
+            <p class="text-lime-400 text-xs font-mono font-bold tracking-wider uppercase">High-Class Equipment</p>
+            <h3 class="text-xl font-bold text-white">Top Workout Machines & Spotless Hygiene</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section id="about" class="py-20 bg-zinc-900/30 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Multi-photo display representation -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 h-48 relative group">
+              <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?q=80&w=400&auto=format&fit=crop" alt="Reception desk" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/40 flex items-end p-3"><span class="text-xs font-semibold text-white">Reception Desk</span></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 h-64 relative group">
+              <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=400&auto=format&fit=crop" alt="Yoga wooden floor" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/40 flex items-end p-3"><span class="text-xs font-semibold text-white">Private Yoga Studio</span></div>
+            </div>
+          </div>
+          <div class="space-y-4 pt-8">
+            <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 h-64 relative group">
+              <img src="https://images.unsplash.com/photo-1571731956622-9a0427213a76?q=80&w=400&auto=format&fit=crop" alt="Certified coaching" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/40 flex items-end p-3"><span class="text-xs font-semibold text-white">Expert Team Support</span></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 h-48 relative group">
+              <img src="https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?q=80&w=400&auto=format&fit=crop" alt="Dumbbells range" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/40 flex items-end p-3"><span class="text-xs font-semibold text-white">Heaviest Steel Dumbbells</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copy Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-1.5 text-lime-400 font-bold uppercase tracking-wider text-xs">
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+            <span>MEMBER-FIRST FITNESS CULTURE</span>
+          </div>
+          <h2 class="text-3xl md:text-4xl font-black font-display tracking-tight text-white leading-tight">
+            A Welcoming, Energetic Fitness Community Serving Moshi & MIDC.
+          </h2>
+          <p class="text-zinc-300 leading-relaxed font-light text-sm md:text-base">
+            YC’s Powerhouse Gym Moshi is more than a gym; it’s a friendly collective of individuals dedicated to improving their lives. We believe fit is for everyone. Whether you are seeking fat loss, deep strength conditioning with expert guidance, or relaxing deep-stretch yoga classes, our supportive trainers customize routines for maximum outcomes.
+          </p>
+
+          <!-- Pride Badge -->
+          <div class="bg-gradient-to-r from-zinc-900 to-zinc-900/40 border-l-4 border-lime-400 p-5 rounded-r-2xl space-y-1">
+            <h4 class="text-white font-bold text-sm">🏳️‍🌈 Proudly LGBTQ+ Friendly & Safe Atmosphere</h4>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              We take pride in maintaining an exceptionally supportive, inclusive, and friendly workout vibe. Everyone is welcome to sweat, achieve, and smile without pressure or judgement.
+            </p>
+          </div>
+
+          <!-- Feature Checkmarks -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm pt-2">
+            <div class="flex items-center gap-2 text-zinc-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-400"></i>
+              <span>Sliver 9 Hotel premises, D Mart Road</span>
+            </div>
+            <div class="flex items-center gap-2 text-zinc-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-400"></i>
+              <span>Fully air-conditioned, air filtration</span>
+            </div>
+            <div class="flex items-center gap-2 text-zinc-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-400"></i>
+              <span>Elite plate loaders, cables & cardioroom</span>
+            </div>
+            <div class="flex items-center gap-2 text-zinc-300">
+              <i data-lucide="check-circle" class="w-4 h-4 text-lime-400"></i>
+              <span>Highly custom Private Yoga classes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities & Premium Facilities (Features Grid) -->
+  <section id="amenities" class="py-20 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-lime-400 font-bold uppercase tracking-widest text-xs font-mono">ELITE AMENITIES</span>
+        <h2 class="text-3xl md:text-4xl font-black font-display tracking-tight text-white leading-tight">
+          Superior Infrastructure Crafted For Premium Workouts
+        </h2>
+        <p class="text-zinc-400 text-sm md:text-base font-light">
+          We maintain rigorous high standards. Everything from dumbbells to audio sound systems are picked to give you an unbeatable performance boost.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="bg-zinc-900/60 border border-zinc-900 p-6 rounded-2xl hover:border-lime-500/20 transition-all space-y-4 group">
+          <div class="bg-lime-500 text-black w-12 h-12 rounded-xl flex items-center justify-center">
+            <i data-lucide="dumbbell" class="w-6 h-6 rotate-45"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-lime-400 transition-colors">Elite Workout Machines</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed font-light">
+            Commercial-grade plate-loaded trainers, multi-station cables, dumbbell row racks up to 50kg, and high-quality heavy bars.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-zinc-900/60 border border-zinc-900 p-6 rounded-2xl hover:border-lime-500/20 transition-all space-y-4 group">
+          <div class="bg-lime-500 text-black w-12 h-12 rounded-xl flex items-center justify-center">
+            <i data-lucide="shield-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-lime-400 transition-colors">Clean & Spotless Area</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed font-light">
+            Hygiene is our hallmark. Consistent sanitization of all surfaces, benches, floor mats, and locker facilities throughout the day.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-zinc-900/60 border border-zinc-900 p-6 rounded-2xl hover:border-lime-500/20 transition-all space-y-4 group">
+          <div class="bg-lime-500 text-black w-12 h-12 rounded-xl flex items-center justify-center">
+            <i data-lucide="user-check" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-lime-400 transition-colors">Elite Certified Guides</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed font-light">
+            Certified fitness personal coaches always present to assist you on the floor, fixing forms, or recommending programs.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-zinc-900/60 border border-zinc-900 p-6 rounded-2xl hover:border-lime-500/20 transition-all space-y-4 group">
+          <div class="bg-lime-500 text-black w-12 h-12 rounded-xl flex items-center justify-center">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white group-hover:text-lime-400 transition-colors">High-Energy Vibe</h3>
+          <p class="text-zinc-400 text-xs leading-relaxed font-light">
+            Overhead geometrical lighting layouts paired with excellent acoustics and a friendly crowd to fuel your intense workout days.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Grid Tour Representation -->
+      <div class="space-y-4 pt-6">
+        <h3 class="text-xl font-bold text-white">Visual Highlights</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          
+          <button onclick="openModal('Reception', 'Marble front desk with premium branding and helpful desk assistant group', '/src/assets/images/gym_reception_lobby_1782281834245.jpg')" class="relative rounded-xl overflow-hidden h-28 bg-zinc-900 border border-zinc-850 hover:border-lime-500/60 transition-all group text-left">
+            <img src="/src/assets/images/gym_reception_lobby_1782281834245.jpg" class="w-full h-full object-cover transition-transform group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 p-2.5 flex flex-col justify-end"><span class="text-xs font-bold text-white truncate">Reception desk</span></div>
+          </button>
+
+          <button onclick="openModal('Treadmills Section', 'Overhead rectangular cool light layout for cardio treadmill rows', '/src/assets/images/gym_interior_treadmills_1782281870718.jpg')" class="relative rounded-xl overflow-hidden h-28 bg-zinc-900 border border-zinc-850 hover:border-lime-500/60 transition-all group text-left">
+            <img src="/src/assets/images/gym_interior_treadmills_1782281870718.jpg" class="w-full h-full object-cover transition-transform group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 p-2.5 flex flex-col justify-end"><span class="text-xs font-bold text-white truncate">Cardio lighting</span></div>
+          </button>
+
+          <button onclick="openModal('Weight Training Zone', 'Heavy plate loaders, squat benches, and barbell lifting area', '/src/assets/images/gym_dumbbell_rack_1782281901841.jpg')" class="relative rounded-xl overflow-hidden h-28 bg-zinc-900 border border-zinc-850 hover:border-lime-500/60 transition-all group text-left">
+            <img src="/src/assets/images/gym_dumbbell_rack_1782281901841.jpg" class="w-full h-full object-cover transition-transform group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 p-2.5 flex flex-col justify-end"><span class="text-xs font-bold text-white truncate">Weight zone</span></div>
+          </button>
+
+          <button onclick="openModal('Yoga Studio', 'Tailored wooden floor studio dedicated to private calm stretching and posture recovery', '/src/assets/images/gym_yoga_studio_1782281948884.jpg')" class="relative rounded-xl overflow-hidden h-28 bg-zinc-900 border border-zinc-850 hover:border-lime-500/60 transition-all group text-left">
+            <img src="/src/assets/images/gym_yoga_studio_1782281948884.jpg" class="w-full h-full object-cover transition-transform group-hover:scale-110">
+            <div class="absolute inset-0 bg-gradient-to-t from-zinc-950 p-2.5 flex flex-col justify-end"><span class="text-xs font-bold text-white truncate">Private Yoga studio</span></div>
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Specialties / Services -->
+  <section id="services" class="py-20 bg-zinc-950 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-lime-400 font-bold uppercase tracking-widest text-xs font-mono">FITNESS PILLARS</span>
+        <h2 class="text-3xl md:text-4xl font-black font-display tracking-tight text-white leading-tight">
+          Specialized Programs Customized For Your Fitness Stage
+        </h2>
+        <p class="text-zinc-400 text-sm md:text-base font-light">
+          Whether you want general gym machinery access, close personal support, or therapeutic private yoga stretching classes, we have you covered.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        
+        <!-- Service Block 1 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-zinc-900/40 border border-zinc-900 p-6 md:p-8 rounded-3xl">
+          <div class="lg:col-span-5 rounded-2xl overflow-hidden h-64 md:h-80">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop" alt="General Gym floor" class="w-full h-full object-cover">
+          </div>
+          <div class="lg:col-span-7 space-y-4">
+            <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+              <span>General Strength & Cardio Access</span>
+              <span class="text-xs bg-zinc-850 px-2.5 py-1 text-zinc-400 border border-zinc-700 rounded-full font-normal">Self Guided</span>
+            </h3>
+            <p class="text-sm text-zinc-300 leading-relaxed font-light">
+              Gain unrestricted entry to the entire strength lifting section and cardioroom. Features multi-station pully units, barbell setups, squat setups, dumbbells up to 50kg, stationary bikes and multiple high-end treadmills under clean, airy air-conditioning.
+            </p>
+            <div class="grid grid-cols-2 gap-4 text-xs pt-1">
+              <div class="bg-zinc-950 p-3 rounded-xl"><div class="font-bold text-lime-400">Unlimited Entry</div><div class="text-zinc-500">Flexible open hours daily</div></div>
+              <div class="bg-zinc-950 p-3 rounded-xl"><div class="font-bold text-lime-400">Pristine Hygiene</div><div class="text-zinc-500">Disinfected hourly</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Block 2 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-zinc-900/40 border border-zinc-900 p-6 md:p-8 rounded-3xl">
+          <div class="lg:col-span-7 space-y-4 order-2 lg:order-1">
+            <div class="inline-flex items-center gap-2 bg-lime-400/10 border border-lime-400/30 px-3 py-1 rounded-full text-lime-400 text-xs font-bold uppercase">
+              ⭐ HIGHLY RATED FOR RESULTS
+            </div>
+            <h3 class="text-2xl font-bold text-white flex flex-wrap items-center gap-2">
+              <span>Certified Personal Training</span>
+              <span class="text-xs bg-lime-500 text-black px-2.5 py-1 rounded-full font-bold">Spotlight: Ayush Bari Sir</span>
+            </h3>
+            <p class="text-sm text-zinc-300 leading-relaxed font-light">
+              Need personalized guidance, weight progression tracking, and continuous encouragement? Work out under our highly praised trainers. Our community consistently gives big shoutouts to <strong class="text-white font-semibold">Ayush Bari Sir</strong> for his highly effective, simple, and encouraging workout directions that simplify complex movements. Ideal for total beginners or lifters breaking weight-lifting plateaus!
+            </p>
+            <div class="grid grid-cols-2 gap-4 text-xs pt-1">
+              <div class="bg-zinc-950 p-3 rounded-xl"><div class="font-bold text-white">Ayush Bari Sir</div><div class="text-zinc-500">Simple easy-to-follow workout tips</div></div>
+              <div class="bg-zinc-950 p-3 rounded-xl"><div class="font-bold text-white">Personal Blueprint</div><div class="text-zinc-500">Custom diet and weight tracking</div></div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 rounded-2xl overflow-hidden h-64 md:h-80 order-1 lg:order-2">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop" alt="Ayush Bari sir training session reference" class="w-full h-full object-cover">
+          </div>
+        </div>
+
+        <!-- Service Block 3 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-zinc-900/40 border border-zinc-900 p-6 md:p-8 rounded-3xl">
+          <div class="lg:col-span-5 rounded-2xl overflow-hidden h-64 md:h-80">
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=600&auto=format&fit=crop" alt="Private yoga training sessions" class="w-full h-full object-cover">
+          </div>
+          <div class="lg:col-span-7 space-y-4">
+            <h3 class="text-2xl font-bold text-white flex items-center gap-2">
+              <span>Tailored Private Yoga Classes</span>
+              <span class="text-xs bg-zinc-850 px-2.5 py-1 text-zinc-400 border border-zinc-700 rounded-full font-normal">Strength & Relaxation</span>
+            </h3>
+            <p class="text-sm text-zinc-300 leading-relaxed font-light">
+              Looking for alignment, flexibility, mobility, or a calm decompression stretch from high desk stress? Our specialized private yoga classes are incredibly popular with both local professionals and international visitors coming to Moshi. Conducted by expert certified gurus inside a serene studio featuring clean wooden floors.
+            </p>
+            <div class="grid grid-cols-2 gap-4 text-xs pt-1">
+              <div class="bg-zinc-950 p-3 rounded-xl"><div class="font-bold text-lime-400">Gurus Spotlight</div><div class="text-zinc-500">Individual focus for posture/mind</div></div>
+              <div class="bg-zinc-950 p-3 rounded-xl"><div class="font-bold text-lime-400">International Favorite</div><div class="text-zinc-500">Deeply praised by overseas guests</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 bg-zinc-900/30 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+        <div>
+          <span class="text-lime-400 font-bold uppercase tracking-widest text-xs font-mono">GENUINE MEMBER STORIES</span>
+          <h2 class="text-3xl md:text-4xl font-black font-display tracking-tight text-white">
+            What Our Powerhouse Family Says
+          </h2>
+          <p class="text-zinc-400 text-sm font-light mt-1">Real reviews posted by actual active gym members of Moshi branch.</p>
+        </div>
+        <div class="flex items-center gap-3 bg-zinc-900 p-4 border border-zinc-850 rounded-xl">
+          <div class="text-right">
+            <div class="text-white font-bold text-sm">4.9 Star Rating</div>
+            <div class="text-zinc-500 text-[10px]">1,090+ Google Reviews</div>
+          </div>
+          <div class="bg-zinc-950 px-3 py-1.5 rounded-lg border border-zinc-800 text-center font-display font-black text-xl text-lime-400">4.9</div>
+        </div>
+      </div>
+
+      <!-- Live Reviews Grid -->
+      <div id="reviews-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="bg-zinc-900/40 border border-zinc-900 p-6 rounded-2xl flex flex-col justify-between hover:border-zinc-800 transition-all">
+          <div class="space-y-3">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <p class="text-zinc-300 text-xs md:text-sm leading-relaxed italic font-light">
+              "Joining YC’s Powerhouse Gym Moshi for private yoga classes was a game-changer. The trainers are so supportive and personalized my workouts perfectly."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/60 mt-4">
+            <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-sm font-bold text-lime-400">S</div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Sarah</h4>
+              <span class="text-[10px] text-zinc-500 uppercase font-mono">PCMC • Verified Yoga Member</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-zinc-900/40 border border-zinc-900 p-6 rounded-2xl flex flex-col justify-between hover:border-zinc-800 transition-all">
+          <div class="space-y-3">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <p class="text-zinc-300 text-xs md:text-sm leading-relaxed italic font-light">
+              "One of the best gyms with quality equipment and a positive vibe. Special thanks to Ayush Bari Sir for his constant support and workout guidance."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/60 mt-4">
+            <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-sm font-bold text-lime-400">R</div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Rohit Bhagat</h4>
+              <span class="text-[10px] text-zinc-500 uppercase font-mono">Moshi • Verified Member</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-zinc-900/40 border border-zinc-900 p-6 rounded-2xl flex flex-col justify-between hover:border-zinc-800 transition-all">
+          <div class="space-y-3">
+            <div class="text-yellow-500 text-sm">★★★★★</div>
+            <p class="text-zinc-300 text-xs md:text-sm leading-relaxed italic font-light">
+              "Excellent gym with great atmosphere and top-class equipment. The gym is always clean, well-maintained, and has positive energy."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/60 mt-4">
+            <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-sm font-bold text-lime-400">S</div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Sandip Nayak</h4>
+              <span class="text-[10px] text-zinc-500 uppercase font-mono">Pimpri-Chinchwad • Verified Member</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Add Review Form -->
+      <div class="bg-zinc-900/40 border border-zinc-900 p-6 md:p-8 rounded-3xl max-w-2xl mx-auto space-y-6">
+        <div class="text-center space-y-1">
+          <h3 class="text-lg font-bold text-white flex items-center justify-center gap-2">
+            <i data-lucide="message-square" class="w-5 h-5 text-lime-400"></i>
+            <span>Current Member? Drop Your Verified Feedback!</span>
+          </h3>
+          <p class="text-xs text-zinc-400 font-light">Tell others about Ayush Bari Sir's tips or our machine cleanliness.</p>
+        </div>
+
+        <form onsubmit="postMemberReview(event)" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="space-y-1">
+            <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Full Name *</label>
+            <input type="text" id="rev-name" required placeholder="e.g. Mahesh Shinde" class="w-full bg-zinc-950 border border-zinc-850 px-4 py-3 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-lime-500">
+          </div>
+          <div class="space-y-1">
+            <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Origin Location</label>
+            <input type="text" id="rev-loc" placeholder="e.g. Moshi, Pune" class="w-full bg-zinc-950 border border-zinc-850 px-4 py-3 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-lime-500">
+          </div>
+          <div class="space-y-1 col-span-2">
+            <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Rating</label>
+            <select id="rev-rating" class="w-full bg-zinc-950 border border-zinc-850 px-4 py-3 rounded-xl text-xs text-zinc-300 focus:outline-none">
+              <option value="5">★★★★★ (5 Stars)</option>
+              <option value="4">★★★★ (4 Stars)</option>
+              <option value="3">★★★ (3 Stars)</option>
+            </select>
+          </div>
+          <div class="space-y-1 col-span-2">
+            <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Your review comments *</label>
+            <textarea id="rev-text" required rows="3" placeholder="Write feedback details about equipment, trainers, or hygiene..." class="w-full bg-zinc-950 border border-zinc-850 px-4 py-3 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-lime-500"></textarea>
+          </div>
+          <button type="submit" class="col-span-2 bg-lime-500 hover:bg-lime-400 text-black font-bold text-xs py-3 rounded-xl uppercase tracking-wider transition-colors">
+            Publish Verified Review
+          </button>
+        </form>
+        <div id="review-success" class="hidden bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 p-4 rounded-xl text-xs text-center">
+          ✔ Your review has been added to our live member board successfully!
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Rates Estimator -->
+  <section id="calculator" class="py-20 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4">
+        <span class="text-lime-400 font-bold uppercase tracking-widest text-xs font-mono">TRANSPARENT RATES</span>
+        <h2 class="text-3xl md:text-4xl font-black font-display tracking-tight text-white leading-tight">
+          Flexible Membership Cost Estimator
+        </h2>
+        <p class="text-zinc-400 text-sm md:text-base font-light">
+          Configure your category and commitment duration to view estimated membership fees, dynamic term discounts, and total savings.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-5xl mx-auto">
+        
+        <!-- Calculator Inputs -->
+        <div class="lg:col-span-7 bg-zinc-900/60 border border-zinc-900 p-6 md:p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+          <div class="space-y-6">
+            
+            <!-- Category -->
+            <div class="space-y-3">
+              <label class="text-xs font-bold text-zinc-400 uppercase tracking-widest">1. Choose Membership Category</label>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <button type="button" onclick="setCalcCategory('general')" id="calc-btn-general" class="p-4 rounded-2xl border text-left bg-lime-500/10 border-lime-400 text-white transition-all">
+                  <i data-lucide="dumbbell" class="w-5 h-5 text-lime-400 mb-2"></i>
+                  <div class="text-xs font-bold text-white">General Gym Access</div>
+                  <p class="text-[10px] text-zinc-400 mt-0.5">Strength machinery floor, cardioroom</p>
+                </button>
+                <button type="button" onclick="setCalcCategory('yoga')" id="calc-btn-yoga" class="p-4 rounded-2xl border border-zinc-900 text-zinc-400 bg-zinc-950 text-left transition-all hover:border-zinc-800">
+                  <i data-lucide="compass" class="w-5 h-5 text-zinc-500 mb-2"></i>
+                  <div class="text-xs font-bold text-white">Private Yoga</div>
+                  <p class="text-[10px] text-zinc-400 mt-0.5">Custom private guru stretching sessions</p>
+                </button>
+                <button type="button" onclick="setCalcCategory('pt')" id="calc-btn-pt" class="p-4 rounded-2xl border border-zinc-900 text-zinc-400 bg-zinc-950 text-left transition-all hover:border-zinc-800">
+                  <i data-lucide="user-check" class="w-5 h-5 text-zinc-500 mb-2"></i>
+                  <div class="text-xs font-bold text-white">Elite PT (Coaching)</div>
+                  <p class="text-[10px] text-zinc-400 mt-0.5">Custom program with Ayush Bari Sir</p>
+                </button>
+              </div>
+            </div>
+
+            <!-- Term -->
+            <div class="space-y-3">
+              <label class="text-xs font-bold text-zinc-400 uppercase tracking-widest block">2. Select Membership Term</label>
+              <div class="grid grid-cols-3 gap-3">
+                <button type="button" onclick="setCalcTerm(3)" id="term-btn-3" class="py-3 px-4 rounded-xl border font-bold text-sm bg-lime-500 text-black border-lime-500 transition-all">3 Months</button>
+                <button type="button" onclick="setCalcTerm(6)" id="term-btn-6" class="py-3 px-4 rounded-xl border border-zinc-900 bg-zinc-950 text-zinc-300 transition-all hover:border-zinc-850">6 Months</button>
+                <button type="button" onclick="setCalcTerm(12)" id="term-btn-12" class="py-3 px-4 rounded-xl border border-zinc-900 bg-zinc-950 text-zinc-300 transition-all hover:border-zinc-850">12 Months</button>
+              </div>
+              <p class="text-[10px] text-zinc-500">
+                💡 Long-term commitment benefits: 6-month term gets 15% discount, 12-month term gets 25% discount!
+              </p>
+            </div>
+
+          </div>
+
+          <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-900 text-[11px] text-zinc-400 flex gap-2 pt-2 mt-4">
+            <i data-lucide="info" class="w-4 h-4 text-lime-400 shrink-0"></i>
+            <span>Standard setup charges are separate. Student packages, couple plans, or customized cross-mix plans are available upon desk request.</span>
+          </div>
+        </div>
+
+        <!-- Quote Summary sheet -->
+        <div class="lg:col-span-5 bg-gradient-to-b from-zinc-900 to-zinc-950 border-2 border-lime-500/30 p-6 md:p-8 rounded-3xl flex flex-col justify-between shadow-2xl relative">
+          <div class="absolute -top-3 right-6 bg-lime-500 text-black font-black text-[9px] uppercase tracking-wider px-3 py-1 rounded-full shadow">Seasonal Offer Active</div>
+          
+          <div class="space-y-6">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wider pb-2 border-b border-zinc-800 font-mono">Plan Quote Summary</h3>
+            
+            <div class="space-y-2.5 text-xs font-mono">
+              <div class="flex justify-between"><span class="text-zinc-400">Membership:</span><span id="quote-category" class="text-white font-bold">General Access</span></div>
+              <div class="flex justify-between"><span class="text-zinc-400">Duration Term:</span><span id="quote-term" class="text-white font-bold">3 Months</span></div>
+              <div class="flex justify-between"><span class="text-zinc-400">Standard Price:</span><span id="quote-standard" class="text-zinc-400 line-through">₹4,500</span></div>
+              <div id="quote-discount-row" class="flex justify-between text-lime-400 hidden"><span>Term Discount:</span><span id="quote-discount-val">-₹0</span></div>
+            </div>
+
+            <div class="bg-zinc-950 p-5 rounded-2xl text-center border border-zinc-850 space-y-1">
+              <div class="text-[10px] text-zinc-400 uppercase tracking-widest">Estimated Total Quote</div>
+              <div id="quote-final-price" class="text-4xl font-black text-lime-400 font-display">₹4,500</div>
+              <div id="quote-monthly-price" class="text-[10px] text-zinc-500">≈ ₹1,500 per month</div>
+            </div>
+
+            <div id="quote-savings-box" class="bg-lime-500/10 border border-lime-500/20 p-3 rounded-xl text-center text-xs text-lime-400 font-bold hidden">
+              🔥 You save ₹0 instantly on this package!
+            </div>
+          </div>
+
+          <div class="pt-6 space-y-3">
+            <button onclick="lockInCalculatedRate()" class="w-full bg-lime-500 hover:bg-lime-400 text-black font-bold text-xs uppercase tracking-wider py-4 rounded-xl flex items-center justify-center gap-1.5 transition-colors">
+              <span>Lock in This Estimate on WhatsApp</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+            <p class="text-[10px] text-center text-zinc-500">Questions? Give us a call: <a href="tel:09922969807" class="text-white underline">099229 69807</a></p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trial Booking Form -->
+  <section id="book-trial" class="py-20 bg-zinc-900/30 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto bg-zinc-900 border border-zinc-850 rounded-3xl overflow-hidden shadow-2xl grid grid-cols-1 md:grid-cols-2">
+        
+        <!-- Cover Card column -->
+        <div class="relative h-64 md:h-auto min-h-[300px]">
+          <div class="absolute inset-0 bg-gradient-to-r from-zinc-900/90 to-zinc-900/30 z-10"></div>
+          <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 z-20 p-8 flex flex-col justify-between">
+            <span class="bg-lime-400 text-black text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full w-fit">Limited Spots Daily</span>
+            
+            <div class="space-y-2">
+              <h3 class="text-2xl font-black font-display text-white leading-tight">Start with a Free Pass</h3>
+              <p class="text-xs text-zinc-300 font-light leading-relaxed">
+                Come explore our heavy machinery section, checkout our sanitized lockers, and get custom guidance tips from Ayush Bari Sir.
+              </p>
+              <div class="text-xs text-lime-400 font-semibold flex items-center gap-1.5 pt-1">
+                <i data-lucide="check" class="w-4 h-4"></i> <span>No setup or card details required</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="p-6 md:p-8 bg-zinc-950 flex flex-col justify-center space-y-6">
+          <div>
+            <h4 class="text-lg font-bold text-white">Claim Your 1-Day Trial</h4>
+            <p class="text-xs text-zinc-400">Complete form details to secure slot booking immediately.</p>
+          </div>
+
+          <form onsubmit="handleTrialSubmit(event)" class="space-y-4">
+            <div class="space-y-1">
+              <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">Your Full Name *</label>
+              <input type="text" id="trial-name" required placeholder="e.g. Ramesh Kadam" class="w-full bg-zinc-900 border border-zinc-800 px-4 py-3 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-lime-500">
+            </div>
+            <div class="space-y-1">
+              <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">WhatsApp Number *</label>
+              <input type="tel" id="trial-phone" required placeholder="e.g. 099229 69807" class="w-full bg-zinc-900 border border-zinc-800 px-4 py-3 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-lime-500">
+            </div>
+            <div class="space-y-1">
+              <label class="text-[10px] font-bold text-zinc-400 uppercase tracking-widest">I am Interested in *</label>
+              <select id="trial-service" class="w-full bg-zinc-900 border border-zinc-850 px-4 py-3 rounded-xl text-xs text-zinc-300 focus:outline-none">
+                <option value="General Gym Access">General Gym Access Floor</option>
+                <option value="Personal Training Guidance">Certified Personal Training</option>
+                <option value="Private Yoga Classes">Tailored Private Yoga Session</option>
+              </select>
+            </div>
+            <button type="submit" class="w-full bg-lime-500 hover:bg-lime-400 text-black font-extrabold text-xs uppercase tracking-wider py-4 rounded-xl flex items-center justify-center gap-1.5 transition-colors">
+              <span>Secure Free Trial Slot</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </button>
+          </form>
+          <div id="trial-success" class="hidden bg-emerald-950/40 border border-emerald-500/30 text-emerald-300 p-4 rounded-xl text-xs text-center">
+            ✔ Free Pass secured! We are redirecting you to WhatsApp to confirm your workout hours.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Footer Section -->
+  <section id="contact" class="py-20 border-t border-zinc-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+        
+        <!-- Contact copy -->
+        <div class="lg:col-span-5 space-y-8 flex flex-col justify-between">
+          <div class="space-y-6">
+            <span class="text-lime-400 font-bold uppercase tracking-widest text-xs font-mono">OUR SPOT IN MOSHI</span>
+            <h2 class="text-3xl font-black font-display tracking-tight text-white leading-none">Come Visit Us Today</h2>
+            <p class="text-zinc-400 text-xs md:text-sm font-light">
+              We are located in MIDC Moshi inside the Hotel Sliver 9 building. Dedicated spaces are available for comfortable bike or car parking.
+            </p>
+
+            <div class="space-y-4 text-xs md:text-sm">
+              <div class="flex gap-3">
+                <div class="bg-zinc-900 p-2 rounded-lg border border-zinc-800 text-lime-400"><i data-lucide="map-pin" class="w-5 h-5 shrink-0"></i></div>
+                <div>
+                  <h4 class="font-bold text-white text-xs mb-0.5">Address</h4>
+                  <p class="text-zinc-400 leading-relaxed text-xs">Sliver 9 Hotel, D Mart Road, MIDC, Moshi, Pimpri-Chinchwad, Maharashtra 411070</p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="bg-zinc-900 p-2 rounded-lg border border-zinc-800 text-lime-400"><i data-lucide="phone" class="w-5 h-5 shrink-0"></i></div>
+                <div>
+                  <h4 class="font-bold text-white text-xs mb-0.5">Phone Line</h4>
+                  <p class="text-zinc-400 text-xs"><a href="tel:09922969807" class="hover:text-lime-400">099229 69807</a></p>
+                </div>
+              </div>
+              <div class="flex gap-3">
+                <div class="bg-zinc-900 p-2 rounded-lg border border-zinc-800 text-lime-400"><i data-lucide="clock" class="w-5 h-5 shrink-0"></i></div>
+                <div>
+                  <h4 class="font-bold text-white text-xs mb-0.5">Working Hours</h4>
+                  <p class="text-zinc-400 text-xs">Open Daily: 6:00 AM – 10:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-zinc-900 p-6 rounded-2xl border border-zinc-850 space-y-3">
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider">Instant Communication</h4>
+            <div class="grid grid-cols-2 gap-3">
+              <a href="tel:09922969807" class="bg-zinc-950 hover:bg-black text-white text-xs font-bold text-center py-3 rounded-xl border border-zinc-800 flex items-center justify-center gap-1"><i data-lucide="phone" class="w-4 h-4 text-lime-400"></i> Call Desk</a>
+              <a href="https://wa.me/919922969807?text=Hi%20YC%27s%20Powerhouse%20Gym%2C%20I%20want%20to%20know%20more%20about%20your%20gym%20membership%20plans%20and%20ongoing%20offers.%20Please%20share%20the%20details%21" target="_blank" class="bg-lime-500 hover:bg-lime-400 text-black text-xs font-bold text-center py-3 rounded-xl flex items-center justify-center gap-1"><i data-lucide="message-square" class="w-4 h-4"></i> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Google Maps iframe -->
+        <div class="lg:col-span-7 bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden relative shadow-2xl h-80 lg:h-auto min-h-[350px]">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.683073740925!2d73.84433197502446!3d18.667086882455858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b7fc40fdf909%3s0x3bc2b7f7fc7088b7!2sHotel%20Silver%20Nine!5e0!3m2!1sen!2sin!4v1719223128470!5m2!1sen!2sin" 
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" class="absolute inset-0">
+          </iframe>
+          <div class="absolute bottom-4 left-4 right-4 bg-zinc-950/90 p-4 border border-zinc-850 rounded-xl backdrop-blur flex justify-between items-center">
+            <div>
+              <h4 class="font-bold text-white text-xs">Hotel Sliver 9 Building</h4>
+              <p class="text-[10px] text-zinc-400">D Mart Road, MIDC, Moshi, PCMC</p>
+            </div>
+            <a href="https://maps.app.goo.gl/uXv7qG7E4m57p1bM8" target="_blank" class="bg-lime-500 text-black text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1"><i data-lucide="map" class="w-4 h-4"></i> Directions</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer block -->
+  <footer class="bg-zinc-950 border-t border-zinc-900 py-12 text-zinc-500 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-2 text-white font-black text-sm">
+            <div class="bg-lime-500 text-black p-1.5 rounded-lg"><i data-lucide="dumbbell" class="w-4 h-4 rotate-45"></i></div>
+            <span>YC’S POWERHOUSE GYM MOSHI</span>
+          </div>
+          <p class="text-zinc-400 leading-relaxed font-light text-xs max-w-sm">
+            Unleash the beast within you. YC’s Powerhouse Gym Moshi is a top-rated local fitness destination inside Sliver 9 Hotel featuring elite plates, clean floors, and premium private yoga setups.
+          </p>
+          <div class="flex gap-2">
+            <span class="bg-zinc-900 border border-zinc-800 text-zinc-400 py-0.5 px-2 rounded text-[10px]">🏳️‍🌈 LGBTQ+ Friendly</span>
+            <span class="bg-zinc-900 border border-zinc-800 text-zinc-400 py-0.5 px-2 rounded text-[10px]">⭐ 4.9 Social Score</span>
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-white font-bold uppercase text-[11px] tracking-wider">Quick links</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#" class="hover:text-lime-400">Top Floor</a></li>
+            <li><a href="#about" class="hover:text-lime-400">Gym Culture</a></li>
+            <li><a href="#amenities" class="hover:text-lime-400">Workout Setup</a></li>
+            <li><a href="#services" class="hover:text-lime-400">Programs</a></li>
+            <li><a href="#testimonials" class="hover:text-lime-400">Success Board</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-white font-bold uppercase text-[11px] tracking-wider">Timings & Location</h4>
+          <p class="leading-relaxed text-zinc-400">
+            Sliver 9 Hotel, D Mart Road, MIDC Moshi, Maharashtra 411070
+          </p>
+          <p class="pt-1">
+            <strong>Desk Tel:</strong> 099229 69807<br>
+            <strong>Timings:</strong> 6:00 AM – 10:00 PM Daily
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-zinc-900 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4 text-zinc-600 text-[11px]">
+        <div>
+          <p>© 2026 YC’s Powerhouse Gym Moshi (वाईसी'स पावरहाउस जिम मोशी). All Rights Reserved.</p>
+          <p class="text-[10px] text-zinc-700 mt-0.5">Sliver 9 Hotel Building, MIDC Moshi, Pimpri-Chinchwad, Maharashtra. Open daily.</p>
+        </div>
+        <div class="flex gap-3 text-sm">
+          <a href="https://www.instagram.com/ycs_powerhouse_moshi/?hl=en" target="_blank" rel="noreferrer" class="bg-zinc-900 border border-zinc-850 p-2 rounded-xl text-zinc-400 hover:text-lime-400"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+          <a href="https://wa.me/919922969807?text=Hi%20YC%27s%20Powerhouse%20Gym%2C%20I%20want%20to%20know%20more%20about%20your%20gym%20membership%20plans%20and%20ongoing%20offers.%20Please%20share%20the%20details%21" target="_blank" rel="noreferrer" class="bg-zinc-900 border border-zinc-850 p-2 rounded-xl text-zinc-400 hover:text-lime-400"><i data-lucide="message-square" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Gallery Modal -->
+  <div id="gallery-lightbox" class="hidden fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 backdrop-blur-md">
+    <div class="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden max-w-2xl w-full relative p-4 space-y-4">
+      <button onclick="closeModal()" class="absolute top-4 right-4 bg-zinc-950 text-zinc-400 hover:text-white border border-zinc-800 p-1.5 rounded-full z-10"><i data-lucide="x" class="w-5 h-5"></i></button>
+      <div class="rounded-xl overflow-hidden max-h-[350px] bg-black">
+        <img id="lightbox-img" src="" class="w-full h-full object-cover">
+      </div>
+      <div class="space-y-1">
+        <span class="text-[10px] text-lime-400 uppercase font-mono font-bold tracking-wider">Facility Spotlight</span>
+        <h4 id="lightbox-title" class="text-lg font-bold text-white">Feature Title</h4>
+        <p id="lightbox-desc" class="text-xs text-zinc-400 font-light">Feature Description</p>
+      </div>
+      <div class="pt-2">
+        <a href="#book-trial" onclick="closeModal()" class="block w-full bg-lime-500 hover:bg-lime-400 text-black font-bold text-center text-xs uppercase py-3 rounded-xl">Claim pass to experience this</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Initialize Lucide Icons on launch
+    lucide.createIcons();
+
+    // Responsive Mobile Menu toggle
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const menuIcon = document.getElementById('menu-icon');
+      const isHidden = menu.classList.contains('hidden');
+      
+      if (isHidden) {
+        menu.classList.remove('hidden');
+        menuIcon.setAttribute('data-lucide', 'x');
+      } else {
+        menu.classList.add('hidden');
+        menuIcon.setAttribute('data-lucide', 'menu');
+      }
+      lucide.createIcons();
+    }
+
+    // Modal Manager
+    function openModal(title, desc, url) {
+      document.getElementById('lightbox-img').src = url;
+      document.getElementById('lightbox-title').innerText = title;
+      document.getElementById('lightbox-desc').innerText = desc;
+      document.getElementById('gallery-lightbox').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('gallery-lightbox').classList.add('hidden');
+    }
+
+    // Dynamic Opening Hours Tracker
+    function checkHoursStatus() {
+      const statusText = document.getElementById('open-status-text');
+      const now = new Date();
+      const hours = now.getHours();
+      const minutes = now.getMinutes();
+
+      if (hours >= 6 && hours < 22) {
+        const hoursLeft = 21 - hours;
+        const minsLeft = 60 - minutes;
+        const closingMsg = hoursLeft === 0 ? `${minsLeft}m` : `${hoursLeft}h ${minsLeft}m`;
+        statusText.innerHTML = `Open Now <span class="font-normal opacity-90">(closes in ${closingMsg})</span>`;
+        statusText.className = "font-bold text-emerald-800";
+      } else {
+        statusText.innerHTML = `Closed <span class="font-normal opacity-90">(Opens Daily 6:00 AM)</span>`;
+        statusText.className = "font-bold text-red-800";
+      }
+    }
+    checkHoursStatus();
+    setInterval(checkHoursStatus, 60000);
+
+    // Dynamic Pricing Estimator State variables
+    let calcCategory = 'general';
+    let calcTerm = 3;
+
+    function setCalcCategory(cat) {
+      calcCategory = cat;
+      
+      // Toggle styles
+      ['general', 'yoga', 'pt'].forEach(c => {
+        const btn = document.getElementById(`calc-btn-${c}`);
+        const icon = btn.querySelector('svg');
+        if (c === cat) {
+          btn.className = "p-4 rounded-2xl border text-left bg-lime-500/10 border-lime-400 text-white transition-all";
+          icon.className.baseVal = "w-5 h-5 text-lime-400 mb-2";
+        } else {
+          btn.className = "p-4 rounded-2xl border border-zinc-900 text-zinc-400 bg-zinc-950 text-left transition-all hover:border-zinc-800";
+          icon.className.baseVal = "w-5 h-5 text-zinc-500 mb-2";
+        }
+      });
+
+      calculateMembershipQuote();
+    }
+
+    function setCalcTerm(term) {
+      calcTerm = term;
+      
+      // Toggle style
+      [3, 6, 12].forEach(t => {
+        const btn = document.getElementById(`term-btn-${t}`);
+        if (t === term) {
+          btn.className = "py-3 px-4 rounded-xl border font-bold text-sm bg-lime-500 text-black border-lime-500 transition-all";
+        } else {
+          btn.className = "py-3 px-4 rounded-xl border border-zinc-900 bg-zinc-950 text-zinc-300 transition-all hover:border-zinc-850";
+        }
+      });
+
+      calculateMembershipQuote();
+    }
+
+    function calculateMembershipQuote() {
+      let baseRate = 1500;
+      let label = "General Gym Access";
+      
+      if (calcCategory === 'yoga') {
+        baseRate = 3500;
+        label = "Private Yoga Classes";
+      } else if (calcCategory === 'pt') {
+        baseRate = 5000;
+        label = "Elite PT (Ayush Bari Sir)";
+      }
+
+      const standardTotal = baseRate * calcTerm;
+      let discountPct = 0;
+      if (calcTerm === 6) discountPct = 15;
+      if (calcTerm === 12) discountPct = 25;
+
+      const discountVal = Math.round((standardTotal * discountPct) / 100);
+      const finalPrice = standardTotal - discountVal;
+      const perMonth = Math.round(finalPrice / calcTerm);
+
+      // DOM Updates
+      document.getElementById('quote-category').innerText = label;
+      document.getElementById('quote-term').innerText = `${calcTerm} Months`;
+      document.getElementById('quote-standard').innerText = `₹${standardTotal.toLocaleString()}`;
+      
+      const discountRow = document.getElementById('quote-discount-row');
+      const savingsBox = document.getElementById('quote-savings-box');
+      
+      if (discountVal > 0) {
+        discountRow.classList.remove('hidden');
+        document.getElementById('quote-discount-val').innerText = `-₹${discountVal.toLocaleString()}`;
+        
+        savingsBox.classList.remove('hidden');
+        savingsBox.innerText = `🔥 You save ₹${discountVal.toLocaleString()} instantly on this package!`;
+      } else {
+        discountRow.classList.add('hidden');
+        savingsBox.classList.add('hidden');
+      }
+
+      document.getElementById('quote-final-price').innerText = `₹${finalPrice.toLocaleString()}`;
+      document.getElementById('quote-monthly-price').innerText = `≈ ₹${perMonth.toLocaleString()} per month`;
+    }
+
+    calculateMembershipQuote(); // Initialize calc fields
+
+    // Callback on calculated rate
+    function lockInCalculatedRate() {
+      let label = calcCategory === 'general' ? 'General' : calcCategory === 'yoga' ? 'Yoga' : 'PersonalTraining';
+      const text = `Hello YC's Powerhouse Gym Moshi! I calculated my estimated rates on your website. I want to secure the ${calcTerm}-Month ${label} package. Please book my schedule.`;
+      const waUrl = `https://wa.me/919922969807?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, '_blank');
+    }
+
+    // Handle Trial Booking submit redirect
+    function handleTrialSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('trial-name').value;
+      const phone = document.getElementById('trial-phone').value;
+      const service = document.getElementById('trial-service').value;
+
+      if (!name || !phone) return;
+
+      const text = `Hello YC's Powerhouse Gym Moshi! I would like to claim my FREE 1-Day Pass.%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Interested Branch:* ${encodeURIComponent(service)}`;
+      const waUrl = `https://wa.me/919922969807?text=${text}`;
+
+      document.getElementById('trial-success').classList.remove('hidden');
+      window.open(waUrl, '_blank');
+    }
+
+    // Interactively add reviews on state
+    function postMemberReview(event) {
+      event.preventDefault();
+      const name = document.getElementById('rev-name').value;
+      const loc = document.getElementById('rev-loc').value || 'Moshi';
+      const ratingVal = parseInt(document.getElementById('rev-rating').value);
+      const comment = document.getElementById('rev-text').value;
+
+      if (!name || !comment) return;
+
+      // Construct a new card layout HTML
+      let stars = '';
+      for (let i = 0; i < ratingVal; i++) stars += '★';
+
+      const card = document.createElement('div');
+      card.className = "bg-gradient-to-br from-lime-950/20 to-zinc-900 border border-lime-500/30 p-6 rounded-2xl flex flex-col justify-between relative";
+      card.innerHTML = `
+        <span class="absolute -top-3 right-4 bg-lime-500 text-black text-[9px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full">Just Added</span>
+        <div class="space-y-3">
+          <div class="text-yellow-500 text-sm">${stars}</div>
+          <p class="text-zinc-300 text-xs md:text-sm leading-relaxed italic font-light">"${comment}"</p>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-zinc-800/60 mt-4">
+          <div class="w-10 h-10 rounded-full bg-zinc-800 flex items-center justify-center text-sm font-bold text-lime-400 uppercase">${name.charAt(0)}</div>
+          <div>
+            <h4 class="text-sm font-bold text-white">${name}</h4>
+            <span class="text-[10px] text-zinc-500 uppercase font-mono">${loc} • Verified Member</span>
+          </div>
+        </div>
+      `;
+
+      // Prepend review
+      const grid = document.getElementById('reviews-grid');
+      grid.insertBefore(card, grid.firstChild);
+
+      // Clean inputs & trigger success visual
+      document.getElementById('rev-name').value = '';
+      document.getElementById('rev-loc').value = '';
+      document.getElementById('rev-text').value = '';
+      
+      const success = document.getElementById('review-success');
+      success.classList.remove('hidden');
+      setTimeout(() => success.classList.add('hidden'), 5000);
+    }
+  </script>
+</body>
+</html>
